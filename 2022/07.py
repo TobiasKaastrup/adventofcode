@@ -10,7 +10,7 @@ def find_all_dirs_and_files(input):
     current_dir = ""
     for line in input:
         if line == "$ cd ..":
-            current_dir = prev_dir
+            current_dir = prev_dir #this may be the bug - maybe the full input sometimes jumps more than one level
         elif line.startswith("$ cd"):
             prev_dir = current_dir
             current_dir = line[5:]

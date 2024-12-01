@@ -3,3 +3,6 @@ def parse_lines(input):
         lines = f.readlines()
     return list(map(str.strip,lines))
 
+def parse_matrix(input_file):
+    with open(input_file, "r") as f:
+        return [list(line.strip()) for line in f]

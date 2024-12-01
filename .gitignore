@@ -1,2 +1,4 @@
 *.txt
 *.env
+adventofcode.code-workspace
+2024/__pycache__/util.cpython-38.pyc
